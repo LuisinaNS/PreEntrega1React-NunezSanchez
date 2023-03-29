@@ -1,17 +1,34 @@
-import styles from "./navbar.module.scss";
+import { NavLink } from "react-router-dom";
+import styles from "./navbar.module.css";
+import { HiShoppingCart } from "react-icons/hi";
 
-const Navbar = ({ icono }) => {
+
+const Navbar = () => {
+  const activeStyle = {
+    color: "white",
+  };
+
   return (
-    <div className={styles.container}>
-      <p><a href="">Inicio</a></p>
-      <p><a href="">Sobre Nosotros</a></p>
-      <p><a href="">Servicios</a></p>
-      <p><a href="">Contactanos</a></p>
-      <div className={styles.cart}><a href=""><img src={icono} alt="" width="30" height="30" /></a>
-      <p>1</p>      
-      </div>
-      
-    </div>
+    <nav className={styles.container}>
+      <NavLink
+        to="/home"
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
+        <p className={styles.container}> SHOP ONLINE 🛒</p>
+      </NavLink>
+      <NavLink
+        to="/products"
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
+        <p className={styles.container}>Productos</p>
+      </NavLink>
+      <NavLink
+        to="/cart"
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
+        <HiShoppingCart />
+      </NavLink>
+    </nav>
   );
 };
 
