@@ -4,9 +4,9 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
+
     <div>
-      <Navbar icono="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" />
-      <h1>Óptica Online</h1>
+      <Navbar> </Navbar>
       <ItemListContainer greeting="Bienvenidos!" />
     </div>
   );

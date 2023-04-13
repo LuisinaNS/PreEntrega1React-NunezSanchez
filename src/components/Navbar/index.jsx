@@ -1,16 +1,14 @@
-import styles from "./navbar.module.scss";
+import Cart from "../CartWidget/CartWidget";
+import styles from "../Navbar/navbar.module.css";
 
-const Navbar = ({ icono }) => {
+const Navbar = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container}>     
       <p><a href="">Inicio</a></p>
       <p><a href="">Sobre Nosotros</a></p>
       <p><a href="">Servicios</a></p>
       <p><a href="">Contactanos</a></p>
-      <div className={styles.cart}><a href=""><img src={icono} alt="" width="30" height="30" /></a>
-      <p>1</p>      
-      </div>
-      
+      <Cart />
     </div>
   );
 };
