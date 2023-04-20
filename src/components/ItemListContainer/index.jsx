@@ -1,14 +1,10 @@
-import ItemCount from "../ItemCount/ItemCount";
-import productos from "../../data/data.json";
+import productos from "../../data/data.js";
 import { useState } from "react";
 import ItemList from "../ItemList/ItemList";
 
 const ItemListContainer = ({ greeting }) => {
   const [lista, setLista] = useState([]);
-  const mostrarNro = (contar) => {
-    console.log("cualquier cosa", contar)
-    window.alert(contar)
-  }
+ 
 
   const todoOk = true;
 
@@ -27,11 +23,10 @@ const ItemListContainer = ({ greeting }) => {
   console.log(lista)
 
   return (
-    <div>
+    <div style={{border:"2px green solid"}}>
       <p>{greeting}</p>
-      <ItemList catalogo={lista}/>
-      <ItemCount stock={10} inicial={0} onAdd={mostrarNro} />
-    </div>
+      <ItemList catalogo={lista}/>  
+    </div> 
   );
 };
 

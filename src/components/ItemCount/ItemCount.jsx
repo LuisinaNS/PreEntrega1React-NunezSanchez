@@ -20,12 +20,12 @@ function ItemCount({ stock, inicial, onAdd }) {
     return (
         <div>
             <div className={styles.count}>
-                <button onClick={handleResta}>-</button>
+                <button className="btn btn-light" onClick={handleResta}>-</button>
                 <h4>{contador}</h4>
-                <button onClick={handleSuma}>+</button>
+                <button className="btn btn-light" onClick={handleSuma}>+</button>
             </div>
 
-            <button onClick={handleOnAdd}>Agregar al carrito</button>
+            <button className="btn btn-secondary" onClick={handleOnAdd}>Agregar al carrito</button>
 
         </div>
 
