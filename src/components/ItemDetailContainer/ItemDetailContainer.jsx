@@ -1,15 +1,20 @@
 import { useState } from "react";
 import productos from "../../data/data.js";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import { useParams } from "react-router-dom";
 
 
 const ItemDetailContainer = ({titulo}) => {
     const [item, modificarItem] = useState({});
     const todoOk = true;
+    const params = useParams()
+   
+    const filtrado = productos.find((item)=> item.id === Number(params.id))
 
+    
     function getItem() {
         return new Promise((resolve, reject) => {
-            if (todoOk) { setTimeout(() => { resolve(productos[2]) }, 2000); }
+            if (todoOk) { setTimeout(() => { resolve(filtrado) }, 2000); }
             else { setTimeout(() => { reject("error") }, 2000); }
 
         })
@@ -22,7 +27,10 @@ const ItemDetailContainer = ({titulo}) => {
     console.log(item)
 
     return (
-      <ItemDetail itemDetalle={item} traigoTitulo={titulo}/>      
+      <div>
+        {item?<ItemDetail itemDetalle={item} traigoTitulo={titulo}/>:
+        <p>Cargando...</p>} 
+      </div>          
     );
 
 }

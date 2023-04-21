@@ -16,8 +16,7 @@ const ItemListContainer = ({ greeting }) => {
     })
   }
 
-  
-  const data = datos()
+    const data = datos()
   data.then(function (res) {setLista(res)})
   data.catch(function (rej) { console.log(rej, "error") })
   console.log(lista)
