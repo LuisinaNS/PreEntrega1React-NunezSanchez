@@ -1,0 +1,20 @@
+.item {
+  position:relative;
+  margin: auto;
+  width: 520px;
+  height: 350px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(grey, .5);
+  border-radius: 10px;
+}
+
+img {
+    width: 290px;
+    margin-top: 47px;
+  }
+
+p {
+    font-size: 0.6em;
+    color: $rose;
+    letter-spacing: 1px;
+  }

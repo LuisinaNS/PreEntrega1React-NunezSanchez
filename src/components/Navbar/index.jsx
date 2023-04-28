@@ -7,9 +7,11 @@ const Navbar = () => {
   return (
     <div className={styles.container}>     
       <Link to={"/"}> <img src={logo} /> </Link>
-      <p><a href="">Sobre Nosotros</a></p>
-      <p><a href="">Servicios</a></p>
-      <p><a href="">Contactanos</a></p>
+      <Link to={"/category/Cristales"}>Cristales</Link>      
+      <Link to={"/category/Lentes de Contacto"}>Lentes de Contacto</Link>
+      <Link to={"/category/Recetados"}>Recetados</Link>
+      <Link to={"/category/Anteojos de Sol"}>Anteojos de Sol</Link>
+
       <Cart />
     </div>
   );
