@@ -1,11 +1,13 @@
-.cajitas {
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-style: outset;
-    color: rgb(57, 57, 59);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: none;
+* {
+    margin: auto%;
+    padding: 0%;
+    border: border-box;
+}
 
+.lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   align-items: center;
+   align-content: center;
 }

@@ -1,39 +1,37 @@
-import "./App.css";
+import styles from "./App.module.css";
 import ItemListContainer from "./components/ItemListContainer";
 import Navbar from "./components/Navbar";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Carrito from "./components/Carrito/Carrito";
+
 function App() {
   return (
     <BrowserRouter>
-      <div>
-      
-      <Navbar/>
+      <div className={styles.all}>
+        <Navbar />
 
         <Routes>
-          <Route path="/"
-          element={<ItemListContainer greeting="Bienvenidos!" />}
+          <Route
+            path="/"
+            element={<ItemListContainer/>}
           />
 
           <Route
             path="/category/:id"
-            element={<ItemListContainer greeting="Bienvenidos!" />}
+            element={<ItemListContainer/>}
           />
 
           <Route
             path="/item/:id"
-            element={<ItemDetailContainer titulo="Este es el contenido de IDC" />}
-          />      
+            element={
+              <ItemDetailContainer/>
+            }
+          />
 
-            <Route
-            path="/Cart"
-            element={<Carrito/>}
-          />  
-
+          <Route path="/Cart" element={<Carrito />} />
         </Routes>
-
-        </div>
+      </div>
     </BrowserRouter>
   );
 }

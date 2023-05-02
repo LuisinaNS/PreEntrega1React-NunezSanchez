@@ -46,7 +46,7 @@ const ItemListContainer = ({ greeting }) => {
   }, [param.id]);
 
   return (
-    <div style={{ border: "2px green solid" }}>
+    <div>
       <p>{greeting}</p>
       <ItemList catalogo={lista} />
     </div>

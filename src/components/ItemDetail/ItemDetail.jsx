@@ -15,7 +15,7 @@ function ItemDetail({ itemDetalle, traigoTitulo }) {
       console.log(cantidad, "ver cantidad")
 
     return (      
-        <div style={{border:"2px violet solid", margin:"0 0 2% 0" }}>
+        <div>
             <p>{traigoTitulo}</p>
             <p>{itemDetalle.nombre}</p>
             <img style={{width: 300}} src={itemDetalle.imagen}/>

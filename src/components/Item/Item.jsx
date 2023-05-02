@@ -4,10 +4,10 @@ import styles from "./Item.module.css";
 function Item({ objeto }) {
   return (
     <Link to={`/item/${objeto.id}`}>
-      <div className= {styles.item}>
-        <p>{objeto.nombre}</p>
-        <img src={objeto.imagen} />
-        <p>Descripción: {objeto.descripcion}</p>
+      <div className= {styles.cajita}>
+        <p className= {styles.titulo}>{objeto.nombre}</p>
+        <img className= {styles.imagen} src={objeto.imagen} />
+        <p className= {styles.desc}>Descripción: {objeto.descripcion}</p>
         <p>Unidades disponibles: {objeto.stock}</p>
       </div>
     </Link>

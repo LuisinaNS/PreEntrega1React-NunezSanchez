@@ -1,14 +1,13 @@
 .container {
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-style: outset;
-    color: rgb(24, 24, 26);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: none;
-    background-color: rgb(228, 229, 231);
-
-
-
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  padding: 5px;
+  color: rgb(64, 64, 82);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.5);
 }
