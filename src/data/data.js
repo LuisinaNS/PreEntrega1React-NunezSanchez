@@ -74,7 +74,7 @@ const elementos = [
         nombre: "Multifocal Corredor Medio",
         categoria: "Cristales",
         imagen: imagen6,
-        descripcion: "Para ver vien a todas distancias, ideal para primeros usuarios progresivos, disponibles en tallado tecnología digital, adaptación fácil e inmediata, buen balance visual y suave transición entre zonas, gran adaptabilidad.",
+        descripcion: "Para ver bien a todas distancias, ideal para primeros usuarios progresivos, disponibles en tallado tecnología digital, adaptación fácil e inmediata, buen balance visual y suave transición entre zonas, gran adaptabilidad.",
         precio: 34300,
         stock: 15
     },

@@ -28,7 +28,7 @@ const ItemDetailContainer = ({titulo}) => {
 
     return (
       <div>
-        {item?<ItemDetail itemDetalle={item} traigoTitulo={titulo}/>:
+        {item ? <ItemDetail itemDetalle={item} traigoTitulo={titulo}/>:
         <p>Cargando...</p>} 
       </div>          
     );

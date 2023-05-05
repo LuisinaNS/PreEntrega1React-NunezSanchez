@@ -22,7 +22,7 @@ function ItemDetail({ itemDetalle, traigoTitulo }) {
             <p>Precio ${itemDetalle.precio}</p>
             <p>{itemDetalle.descripcion}</p>
             <p>Unidades disponibles: {itemDetalle.stock}</p>
-            {cantidad === undefined? <ItemCount stock={itemDetalle.stock} inicial={0} onAdd={mostrarNro} /> : <Link to={"/Cart"}><button>"Ir al Carrito"</button></Link>}          
+            {cantidad === undefined ? <ItemCount stock={itemDetalle.stock} inicial={0} onAdd={mostrarNro} /> : <Link to={"/Cart"}><button>"Ir al Carrito"</button></Link>}          
         </div>
     
     )}
